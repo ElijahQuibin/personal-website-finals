@@ -69,13 +69,11 @@ export default {};
 
 
 
-
-
 <style scoped>
 .about-section {
   padding: 120px 20px;
-  background-color: #1e293b;
-  color: #e2e8f0;
+  background-color: #1e1e1e;
+  color: #c8c8c8;
   text-align: center;
 }
 
@@ -88,25 +86,23 @@ export default {};
   font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 60px;
-  color: #cbd5e1;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #e6e6e6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .about-card {
-  background-color: #282828;
+  background-color: #272727; /* Light gray card background */
   border-radius: 14px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 40px;
   text-align: left;
   margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-card h3 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #cbd5e1;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .profile-info {
@@ -121,7 +117,7 @@ export default {};
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image img {
@@ -134,7 +130,12 @@ export default {};
   font-size: 1.25rem;
   line-height: 1.9;
   margin-bottom: 20px;
-  color: #94a3b8;
+  color: #b7b7b7;
+  transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+.profile-text p:hover {
+  color: #a8a8a8; /* Darker text on hover */
 }
 
 .skills-section {
@@ -145,8 +146,8 @@ export default {};
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 30px;
-  color: #cbd5e1;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  color: #d4d4d4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .skills-list {
@@ -195,9 +196,8 @@ export default {};
     margin-bottom: 40px;
   }
 
-  .about-card h3 {
-    font-size: 2rem;
-    margin-bottom: 25px;
+  .about-card {
+    padding: 30px;
   }
 
   .profile-text p {
