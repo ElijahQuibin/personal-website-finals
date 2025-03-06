@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section">
+  <section id="home" class="hero-section">
     <div class="hero-content">
       <h1>Welcome!</h1>
       <p>Explore my world of development and creativity.</p>
