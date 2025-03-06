@@ -3,9 +3,8 @@
   <hero-section />
   <about-section />
   <gallery-section />
-  <div style="height: 200vh;">
-    
-  </div>
+  <feedback-form />
+  <footer-section />
 </template>
 
 <script setup>
@@ -14,7 +13,8 @@ import './assets/base.css';
 import HeroSection from './components/HeroSection.vue';
 import AboutSection from './components/AboutSection.vue';
 import GallerySection from './components/GallerySection.vue';
-import 
+import FeedbackForm from './components/FeedbackForm.vue';
+import FooterSection from './components/FooterSection.vue'
 </script>
 
 <style scoped>
