@@ -2,17 +2,17 @@
   <footer class="footer">
     <div class="footer-content">
       <div class="copyright">
-        &copy; {{ currentYear }} All Rights Reserved.
+        &copy; {{ currentYear }} All Rights Reserved. Sources below
       </div>
       <div class="sources">
         <a href="https://gemini.google.com/" target="_blank" class="source-link">
-          <span class="source-icon gemini-icon">🌐</span>
+          <span class="source-icon gemini-icon">Gemini🌐</span>
         </a>
         <a href="https://github.com/your-username" target="_blank" class="source-link">
-          <span class="source-icon github-icon">🐙</span>
+          <span class="source-icon github-icon">GitHub🐙</span>
         </a>
         <a href="https://vita.vercel.app/" target="_blank" class="source-link">
-          <span class="source-icon vita-icon">⚡</span>
+          <span class="source-icon vita-icon">Vite⚡</span>
         </a>
       </div>
     </div>
