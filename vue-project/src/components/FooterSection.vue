@@ -1,26 +1,23 @@
 <template>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="copyright">
-          &copy; {{ currentYear }} All Rights Reserved. Sources used below:
-        </div>
-        <div class="sources">
-          <a href="https://gemini.google.com/" target="_blank" class="source-link">
-            <img src="../assets/gemini-icon.png" alt="Gemini" class="source-icon" />
-          </a>
-          <a href="https://github.com/your-username" target="_blank" class="source-link">
-            <img src="../assets/github-icon.png" alt="GitHub" class="source-icon" />
-          </a>
-          <a href="https://vita.vercel.app/" target="_blank" class="source-link">
-            <img src="../assets/vita-icon.png" alt="Vita" class="source-icon" />
-          </a>
-          <a href="https://supabase.com/" target="_blank" class="source-link">
-            <img src="../assets/supabase-icon.png" alt="Supabase" class="source-icon" />
-          </a>
-        </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="copyright">
+        &copy; {{ currentYear }} All Rights Reserved.
       </div>
-    </footer>
-  </template>
+      <div class="sources">
+        <a href="https://gemini.google.com/" target="_blank" class="source-link">
+          <span class="source-icon gemini-icon">🌐</span>
+        </a>
+        <a href="https://github.com/your-username" target="_blank" class="source-link">
+          <span class="source-icon github-icon">🐙</span>
+        </a>
+        <a href="https://vita.vercel.app/" target="_blank" class="source-link">
+          <span class="source-icon vita-icon">⚡</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</template>
 
 
 
