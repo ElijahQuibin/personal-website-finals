@@ -1,24 +1,18 @@
 <template>
-    <section class="hero-section">
-      <div class="hero-content">
-        <div class="text-content">
-          <h1>Hello, I'm [Your Name]</h1>
-          <p>A passionate developer and creator.</p>
-          <button class="hero-button">Learn More</button>
-        </div>
-        <div class="image-content">
-          <img src="../assets/prof.jpg" alt="Personal Hero Image" />
-        </div>
-      </div>
-    </section>
-  </template>
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome!</h1>
+      <p>Explore my world of development and creativity.</p>
+      <button class="hero-button">View My Work</button>
+    </div>
+  </section>
+</template>
 
 
 
 <script>
 export default {};
 </script>
-
 
 
 <style scoped>
@@ -29,92 +23,80 @@ export default {};
   justify-content: center;
   padding: 20px;
   color: #e2e8f0;
-  background-color: #282828; /* Solid dark background */
+  background: linear-gradient(135deg, #282828, #333333); /* Neutral gradient */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent 70%);
+  pointer-events: none;
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
+  max-width: 800px;
   width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
-.text-content {
-  flex: 1;
-  padding-right: 40px;
-}
-
-.text-content h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
+.hero-content h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
   margin-bottom: 20px;
   color: #cbd5e1;
-  line-height: 1.2;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.text-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
   color: #94a3b8;
-  line-height: 1.6;
+  line-height: 1.7;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero-button {
   background-color: #f97316;
   color: #1e293b;
-  padding: 18px 40px;
+  padding: 20px 50px;
   border: none;
-  border-radius: 10px;
-  font-size: 1.2rem;
+  border-radius: 12px;
+  font-size: 1.3rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .hero-button:hover {
-  background-color: #ea580c;
-  transform: translateY(-3px);
-}
-
-.image-content {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.image-content img {
-  max-width: 500px;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  object-fit: cover;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column-reverse;
-    align-items: center;
+  .hero-content h1 {
+    font-size: 3.5rem;
   }
 
-  .text-content {
-    padding-right: 0;
-    text-align: center;
-    margin-top: 30px;
+  .hero-content p {
+    font-size: 1.2rem;
   }
 
-  .text-content h1 {
-    font-size: 2.8rem;
-  }
-
-  .image-content {
-    justify-content: center;
-  }
-
-  .image-content img {
-    max-width: 100%;
+  .hero-button {
+    padding: 18px 40px;
+    font-size: 1.2rem;
   }
 }
 </style>
