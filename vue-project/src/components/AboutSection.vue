@@ -9,13 +9,13 @@
             </div>
             <div class="profile-text">
               <p>
-                Hello! I'm [Your Name], a passionate developer and creator based in [Your Location]. I love building things for the web and exploring new technologies.
+                Hello! I'm Elijah Quibin, a passionate learner and future developer based in the Philippines. I love tinkering with things like the web and exploring new technologies.
               </p>
               <p>
-                I have experience in [List your skills or areas of expertise]. My goal is to create meaningful and impactful projects that solve real-world problems.
+                My hobbies are playing games like Honkai Star rail, Marvel Rivals, and Tekken 8. I love having to experience thrills, like for the first time jumping off a high place.
               </p>
               <p>
-                In my free time, I enjoy [Mention your hobbies or interests]. I'm always eager to learn and grow, and I'm excited to see what the future holds.
+                I aspire to further technology if fate would allow me to learn things that haven't been learned by human kind. 
               </p>
             </div>
           </div>

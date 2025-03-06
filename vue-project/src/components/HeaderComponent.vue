@@ -1,7 +1,7 @@
 <template>
   <header :class="{ 'header-hidden': isHeaderHidden }">
     <div class="header-content">
-      <div class="logo">My Website</div>
+      <div class="logo">WEB-ELI</div>
       <nav :class="{ 'mobile-nav': isMobileMenuOpen }" aria-label="Main Navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>

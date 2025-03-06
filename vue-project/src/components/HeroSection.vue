@@ -1,9 +1,11 @@
 <template>
   <section id="home" class="hero-section">
     <div class="hero-content">
-      <h1>Welcome!</h1>
-      <p>Explore my world of development and creativity.</p>
-      <button class="hero-button">View My Work</button>
+      <h1>Hello Users!</h1>
+      <p>Since your here, why not play a bit of games first before you proceed?</p>
+      <a href="https://games-site.github.io/">
+        <button class="hero-button">Play a Game</button>
+      </a>  
     </div>
   </section>
 </template>
