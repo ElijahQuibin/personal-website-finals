@@ -70,7 +70,7 @@ header {
   transition: transform 0.3s ease-in-out;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header-hidden {
@@ -82,10 +82,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 18px 30px;
+  max-width: 1200px; /* Align with hero section */
+  margin: 0 auto; /* Center header */
 }
 
 .logo {
-  font-size: 2.2rem; /* Slightly larger logo */
+  font-size: 2.2rem;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0;
@@ -102,9 +104,9 @@ nav a {
   color: #94a3b8;
   text-decoration: none;
   margin: 0 25px;
-  font-weight: 500; /* Medium font weight */
+  font-weight: 500;
   transition: color 0.3s ease;
-  font-size: 1.1rem; /* Slightly larger navigation links */
+  font-size: 1.1rem;
 }
 
 nav a:hover {
