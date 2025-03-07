@@ -14,9 +14,15 @@
       </div>
     </div>
     <div v-if="lightboxOpen" class="lightbox" @click="closeLightbox">
-      <div class="lightbox-content">
+      <div class="lightbox-content" @click.stop>
+        <button class="lightbox-nav lightbox-prev" @click="prevImage">
+          &lt;
+        </button>
         <img :src="images[lightboxIndex]" :alt="`Full Gallery Image ${lightboxIndex + 1}`" />
-        <button class="lightbox-close" @click.stop="closeLightbox">
+        <button class="lightbox-nav lightbox-next" @click="nextImage">
+          &gt;
+        </button>
+        <button class="lightbox-close" @click="closeLightbox">
           &times;
         </button>
       </div>
@@ -35,12 +41,12 @@ export default {
         "/gallery/four.jpg",
         "/gallery/five.jpg",
         "/gallery/six.webp",
-        "gallery/seven.webp",
-        "gallery/eight.webp",
-        "gallery/nine.webp",
-        "gallery/ten.webp",
-        "gallery/eleven.webp",
-        "gallery/twelve.webp",
+        "/gallery/seven.webp",
+        "/gallery/eight.webp",
+        "/gallery/nine.webp",
+        "/gallery/ten.webp",
+        "/gallery/eleven.webp",
+        "/gallery/twelve.webp",
       ],
       lightboxOpen: false,
       lightboxIndex: 0,
@@ -53,6 +59,12 @@ export default {
     },
     closeLightbox() {
       this.lightboxOpen = false;
+    },
+    prevImage() {
+      this.lightboxIndex = (this.lightboxIndex - 1 + this.images.length) % this.images.length;
+    },
+    nextImage() {
+      this.lightboxIndex = (this.lightboxIndex + 1) % this.images.length;
     },
   },
 };
@@ -140,13 +152,42 @@ export default {
   max-width: 90%;
   max-height: 90%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lightbox-content img {
-  width: 100%;
-  height: auto;
+  max-width: 80%;
+  max-height: 80%;
   display: block;
   border-radius: 10px;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.lightbox-nav:hover {
+  background: rgba(218, 217, 217, 0.4);
+}
+
+.lightbox-prev {
+  left: 10px;
+}
+
+.lightbox-next {
+  right: 10px;
 }
 
 .lightbox-close {
@@ -165,12 +206,5 @@ export default {
 
 .lightbox-close:hover {
   background: rgba(218, 217, 217, 0.4);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
 }
 </style>
