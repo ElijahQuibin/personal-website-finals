@@ -14,6 +14,9 @@
         <a href="https://vita.vercel.app/" target="_blank" class="source-link">
           <span class="source-icon vita-icon">Vite⚡</span>
         </a>
+        <a href="https://supabase.com/" target="_blank" class="source-link">
+          <span class="source-icon vita-icon">Supabase🛢️</span>
+        </a>
       </div>
     </div>
   </footer>
